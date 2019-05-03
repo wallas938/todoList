@@ -1,0 +1,65 @@
+body {
+    padding-top: 50px;
+}
+
+#todo-app {
+    width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+
+header, section, footer {
+    border: 1px solid grey;
+}
+
+#new-todo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 10px;
+    border-bottom: none;
+}
+
+section {
+    padding-left: 10px;
+}
+
+section .todos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 15px;
+}
+
+input, footer {
+    margin: 10px 0;
+}
+
+input {
+    border: none;
+}
+#new-todo-container > i {
+    margin: 15px 15px 0 0;
+    
+}
+
+section, footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer > div{
+    padding: 5px 0 5px 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

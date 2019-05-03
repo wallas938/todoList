@@ -1,0 +1,40 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000o\u0000d\u0000o\u0000L\u0000i\u0000s\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open",
+    "scss-watch": "sass --watch src/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wallas938/todoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wallas938/todoList/issues"
+  },
+  "homepage": "https://github.com/wallas938/todoList#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
