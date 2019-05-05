@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export function TodoInput ( { handleNewTodo } ) {
+export function TodoInput ( { handleNewTodo, allCompletionHandler } ) {
 
     function addTodo(e) {
         let newTodo = e.target.value
@@ -17,7 +17,7 @@ export function TodoInput ( { handleNewTodo } ) {
     return (
         <header>
             <div id="new-todo-container">
-                <i className="fas fa-chevron-down"></i>
+                <i className="fas fa-chevron-down" onClick={allCompletionHandler}></i>
                 <input type="text" id="new-todo" placeholder="Entrer todo" onKeyUp={addTodo} autoFocus/>
             </div>
         </header>
