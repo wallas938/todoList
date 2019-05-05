@@ -93,12 +93,24 @@ export function TodoList({ todos, completionHandler, removeHandler, display_mode
                 return !todo.isCompleted
             })
             todos = todos.map((todo, i) => {
-                        return  <div key={i}>
-                                    <input type="checkbox" value={i} onChange={checkControl}/>
-                                    <input type="text" value={todo.task} onDoubleClick={editEnabler} readOnly/>
-                                </div>
+                if(inEditing && i == indexTodoToBeChanged) {
+                            
+                    return  <div key={i}>
+                        <input type="checkbox" value={i} onChange={checkControl} />
+                        <input type="text" index={i} onChange={editTodo} value={taskEdited}  className="" onKeyUp={validNewTask}/>
+                    </div>
+
+                }else {
+
+                    return  <div key={i}>
+                        <input type="checkbox" value={i} onChange={checkControl} />
+                        <input type="text" index={i} value={todo.task}  className="" onDoubleClick={editEnabler} readOnly/>
+                    </div>
+
                 }
-            )
+                        
+            })
+            
         }else if(display_mode === 'completed') {
             todos = todos.filter(todo => {
                 return todo.isCompleted
